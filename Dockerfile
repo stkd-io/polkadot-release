@@ -30,7 +30,7 @@ RUN apk upgrade
 
 RUN mkdir /data;
 
-COPY ./src/main.py /data/polka_alert.py
+COPY ./app/main.py /data/polka_alert.py
 
 CMD [ "python", "/data/polka_alert.py"]
 
