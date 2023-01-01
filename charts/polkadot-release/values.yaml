@@ -1,0 +1,6 @@
+schedule: "*/60 * * * *"
+
+timezone: "UTC"
+PAGER_DUTY_API_KEY: ""
+SLACK_API: ""
+SLACK_CHANNEL_NAME: ""
