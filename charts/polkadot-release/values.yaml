@@ -1,6 +1,11 @@
-schedule: "*/60 * * * *"
+schedule: "*/10 * * * *"
+CHECK_TIMER: "10"
 
-timezone: "UTC"
+
 PAGER_DUTY_API_KEY: ""
+PAGER_DUTY_SERVICE: ""
 SLACK_API: ""
 SLACK_CHANNEL_NAME: ""
+GITHUB_API: ""
+GITHUB_REPO: ""
+

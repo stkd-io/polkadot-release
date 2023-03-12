@@ -11,17 +11,25 @@ spec:
         spec:
           containers:
           - name: {{ .Release.Name }}
-            image: stkdio/polkadot-release:latest
+            image: stkdio/github-release-notifications:1.0.16
             imagePullPolicy: Always
             env:
             - name: TZ
-              value: {{ .Values.timezone }}
+              value: "UTC"
             - name: PD_API_KEY
               value:  {{ .Values.PAGER_DUTY_API_KEY }}
+            - name: PD_SERVICE
+              value: {{ .Values.PAGER_DUTY_SERVICE }}
             - name: SLACK_API
               value: {{ .Values.SLACK_API }}
             - name: SLACK_CHANNEL_NAME
               value: {{ .Values.SLACK_CHANNEL_NAME }}
+            - name: GITHUB_API
+              value: {{ .Values.GITHUB_API }}
+            - name: GITHUB_REPO
+              value: {{ .Values.GITHUB_REPO }}
+            - name: CHECK_TIMER
+              value: {{ .Values.CHECK_TIMER }}
           imagePullSecrets: 
             - name: registry-credentials
           restartPolicy: OnFailure
