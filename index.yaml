@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   polkadot-release:
   - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-03-13T02:07:17.009676188Z"
+    description: A Helm chart for Kubernetes
+    digest: 26c63cb9c76bc28f8a72d225e7ad5a3b9ee4e6969c6614fb89219977d034d56b
+    name: polkadot-release
+    type: application
+    urls:
+    - https://github.com/stkd-io/polkadot-release/releases/download/polkadot-release-1.0.0/polkadot-release-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
     appVersion: 1.17.0
     created: "2023-03-13T00:40:11.138973738Z"
     description: A Helm chart for Kubernetes
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/stkd-io/polkadot-release/releases/download/polkadot-release-0.1.0/polkadot-release-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-13T00:40:11.138981138Z"
+generated: "2023-03-13T02:07:17.009686388Z"
