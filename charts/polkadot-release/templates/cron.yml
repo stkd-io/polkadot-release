@@ -18,8 +18,6 @@ spec:
               value: "UTC"
             - name: PD_API_KEY
               value:  {{ .Values.PAGER_DUTY_API_KEY }}
-            - name: PD_SERVICE
-              value: {{ .Values.PAGER_DUTY_SERVICE }}
             - name: SLACK_API
               value: {{ .Values.SLACK_API }}
             - name: SLACK_CHANNEL_NAME
@@ -30,6 +28,4 @@ spec:
               value: {{ .Values.GITHUB_REPO }}
             - name: CHECK_TIMER
               value: {{ .Values.CHECK_TIMER }}
-          imagePullSecrets: 
-            - name: registry-credentials
           restartPolicy: OnFailure
