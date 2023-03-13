@@ -5,12 +5,13 @@ You will need to create a Values.yaml and configure as needed. The Slack intergr
 
 Example Values.yaml
 ```
-schedule: "*/60 * * * *"
+schedule: "*/10 * * * *"
 
-timezone: "UTC"
 PAGER_DUTY_API_KEY: "SERIVCE_KEY"
 SLACK_API: "API_KEY_FROM_SLACK_FOR_APPLICATION"
 SLACK_CHANNEL_NAME: "POLKADOT-RELEASE"
+GITHUB_API: "ACCESS_TO_PUBLIC_REPOS"
+GITHUB_REPO: "paritytech/polkadot"
 ```
 
 
