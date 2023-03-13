@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Name }}
   namespace: {{ .Release.Namespace }}
 spec:
-  schedule: {{ .Values.schedule }}
+  schedule: {{ .Values.schedule | quote }}
   jobTemplate:
     spec:
       template:
@@ -15,17 +15,17 @@ spec:
             imagePullPolicy: Always
             env:
             - name: TZ
-              value: "UTC"
+              value: {{ .Values.timezone | quote }}
             - name: PD_API_KEY
-              value:  {{ .Values.PAGER_DUTY_API_KEY }}
+              value: {{ .Values.PAGER_DUTY_API_KEY | quote }}
             - name: SLACK_API
-              value: {{ .Values.SLACK_API }}
+              value: {{ .Values.SLACK_API | quote }}
             - name: SLACK_CHANNEL_NAME
-              value: {{ .Values.SLACK_CHANNEL_NAME }}
+              value: {{ .Values.SLACK_CHANNEL_NAME | quote }}
             - name: GITHUB_API
-              value: {{ .Values.GITHUB_API }}
+              value: {{ .Values.GITHUB_API | quote }}
             - name: GITHUB_REPO
-              value: {{ .Values.GITHUB_REPO }}
+              value: {{ .Values.GITHUB_REPO | quote }}
             - name: CHECK_TIMER
-              value: {{ .Values.CHECK_TIMER }}
+              value: {{ .Values.CHECK_TIMER | quote }}
           restartPolicy: OnFailure
