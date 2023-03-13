@@ -6,6 +6,6 @@ timezone: "UTC"
 PAGER_DUTY_API_KEY: ""
 SLACK_API: ""
 SLACK_CHANNEL_NAME: ""
-GITHUB_API: ""
+GITHUB_API_TOKEN: ""
 GITHUB_REPO: "paritytech/polkadot"
 

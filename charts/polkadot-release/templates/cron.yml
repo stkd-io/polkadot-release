@@ -23,7 +23,7 @@ spec:
             - name: SLACK_CHANNEL_NAME
               value: {{ .Values.SLACK_CHANNEL_NAME | quote }}
             - name: GITHUB_API
-              value: {{ .Values.GITHUB_API | quote }}
+              value: {{ .Values.GITHUB_API_TOKEN | quote }}
             - name: GITHUB_REPO
               value: {{ .Values.GITHUB_REPO | quote }}
             - name: CHECK_TIMER
