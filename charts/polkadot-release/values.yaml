@@ -1,5 +1,5 @@
-schedule: "*/20 * * * *"
-CHECK_TIMER: "20"
+schedule: "*/60 * * * *"
+CHECK_TIMER: "60"
 
 
 PAGER_DUTY_API_KEY: ""
